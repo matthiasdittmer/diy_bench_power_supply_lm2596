@@ -1,5 +1,5 @@
 # DIY Bench Power Supply LM2596
-There is a ton of material on the internet about DIY bench power supplies based on TI LM2576 [1], TI LM2587 [2] and TI LM2596 [3] buck / boost converters.
+There is a ton of material on the internet about DIY bench power supplies based on TI LM2576 [1], TI LM2587 [2] and TI LM2596 [3] buck/boost converters.
 
 I used [4], [5] and [6] as a starting point for my own design.
 
@@ -13,10 +13,10 @@ I used [4], [5] and [6] as a starting point for my own design.
 
 # Features
 * Two channels with on/off LED and button per channel
-* Adjustable voltage
-* Settable and adjustable current limit
+* Adjustable voltage (CV)
+* Settable and adjustable current limit (CC)
 * LED indicators for enabled current limit and reached limit
-* LCD showing current voltages, currents and current limits per channel
+* LCD showing measured voltages, currents and current limits per channel
 * Buzzer feedback (acoustic button feedback, current limit warning)
 
 # Design / Components
@@ -24,7 +24,10 @@ I used [4], [5] and [6] as a starting point for my own design.
 * LM2596 buck converter boards [7]
 * HP notebook 90W power supply brick (19V, max. 4.74A)
 
-References:
+## Schematic
+The [schematic](https://easyeda.com/matthiasdittmer/diy_power_supply_lm2596) can be found at [EasyEDA](https://easyeda.com/). I did no PCB (perfboard design is enough).
+
+# References
 * [1] Website TI LM2576: https://www.ti.com/product/LM2576
 * [2] Website TI LM2587: https://www.ti.com/product/LM2587
 * [3] Website TI LM2596: https://www.ti.com/product/LM2596
