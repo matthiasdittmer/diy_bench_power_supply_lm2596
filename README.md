@@ -24,6 +24,36 @@ I used [4], [5] and [6] as a starting point for my own design.
 * LM2596 buck converter boards [7]
 * HP notebook 90W power supply brick (19V, max. 4.74A)
 
+## Simulation
+Texas Instruments does provide SPICE models for the LM2596 3.3, 5 and 12 volt version. But not for the ADJ version. Simple LTspice simulations with a modified SPICE model are located here: `/hardware/ltspice/`.
+
+Modified lines to edit out the internal voltage divider (see file `LM2596_5P0_TRANS.LIB`).
+
+Original lines:
+```
+... 
+E_U1_E5         U1_N16912605 0 VALUE { V(FB_INT, GND) }
+...
+R_RFB2         FB FB_INT  7.63k TC=0,0 
+R_RFB1         GND FB_INT  2.5k TC=0,0 
+...
+```
+
+New lines:
+```
+...
+E_U1_E5         U1_N16912605 0 VALUE { V(FB, GND) }
+...
+*R_RFB2         FB FB_INT  7.63k TC=0,0 
+*R_RFB1         GND FB_INT  2.5k TC=0,0 
+...
+```
+
+Added simulations are:
+
+* `lm2596-modified-3_3v-load-3_3-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-3_3v-load-3_3-ohm-transient-10ms.png).
+* `lm2596-modified-3_3v-load-33-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-3_3v-load-33-ohm-transient-10ms.png).
+
 ## Schematic
 The [schematic](https://easyeda.com/matthiasdittmer/diy_power_supply_lm2596) can be found at [EasyEDA](https://easyeda.com/). I did no PCB (perfboard design is enough).
 
