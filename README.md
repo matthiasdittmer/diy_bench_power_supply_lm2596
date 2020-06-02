@@ -51,8 +51,12 @@ E_U1_E5         U1_N16912605 0 VALUE { V(FB, GND) }
 
 Added simulations are:
 
-* `lm2596-modified-3_3v-load-3_3-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-3_3v-load-3_3-ohm-transient-10ms.png).
-* `lm2596-modified-3_3v-load-33-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-3_3v-load-33-ohm-transient-10ms.png).
+* `lm2596-modified-3_3v-load-3_3-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-3_3v-load-3_3-ohm-transient-10ms.png)
+* `lm2596-modified-3_3v-load-33-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-3_3v-load-33-ohm-transient-10ms.png)
+* `lm2596-modified-5v-load-5-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-5v-load-5-ohm-transient-10ms.png)
+* `lm2596-modified-5v-load-50-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-5v-load-50-ohm-transient-10ms.png)
+* `lm2596-modified-17v-load-17-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-17v-load-17-ohm-transient-10ms.png)
+* `lm2596-modified-17v-load-50-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-17v-load-50-ohm-transient-10ms.png)
 
 ## Schematic
 The [schematic](https://easyeda.com/matthiasdittmer/diy_power_supply_lm2596) can be found at [EasyEDA](https://easyeda.com/). I did no PCB (perfboard design is enough).
