@@ -58,6 +58,10 @@ Added simulations are:
 * `lm2596-modified-17v-load-17-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-17v-load-17-ohm-transient-10ms.png)
 * `lm2596-modified-17v-load-50-ohm-transient-10ms.asc` with [results](/hardware/ltspice/lm2596-modified-17v-load-50-ohm-transient-10ms.png)
 
+Special simulation with added current limiter (not sure about results):
+
+* `lm2596-modified-5v-load-5-ohm-transient-10ms-with-current-limiter.asc` with [results](/hardware/ltspice/lm2596-modified-5v-load-5-ohm-transient-10ms-with-current-limiter.png)
+
 ## Schematic
 The [schematic](https://easyeda.com/matthiasdittmer/diy_power_supply_lm2596) can be found at [EasyEDA](https://easyeda.com/). I did no PCB (perfboard design is enough).
 
