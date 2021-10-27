@@ -31,11 +31,11 @@ Modified lines to edit out the internal voltage divider (see file `LM2596_5P0_TR
 
 Original lines:
 ```
-... 
+...
 E_U1_E5         U1_N16912605 0 VALUE { V(FB_INT, GND) }
 ...
-R_RFB2         FB FB_INT  7.63k TC=0,0 
-R_RFB1         GND FB_INT  2.5k TC=0,0 
+R_RFB2         FB FB_INT  7.63k TC=0,0
+R_RFB1         GND FB_INT  2.5k TC=0,0
 ...
 ```
 
@@ -44,8 +44,8 @@ New lines:
 ...
 E_U1_E5         U1_N16912605 0 VALUE { V(FB, GND) }
 ...
-*R_RFB2         FB FB_INT  7.63k TC=0,0 
-*R_RFB1         GND FB_INT  2.5k TC=0,0 
+*R_RFB2         FB FB_INT  7.63k TC=0,0
+*R_RFB1         GND FB_INT  2.5k TC=0,0
 ...
 ```
 
@@ -65,6 +65,9 @@ Special simulation with added current limiter (not sure about results):
 ## Schematic
 The [schematic](https://easyeda.com/matthiasdittmer/diy_power_supply_lm2596) can be found at [EasyEDA](https://easyeda.com/). I did no PCB (perfboard design is enough).
 
+## Performance of LM2596
+For a detailed performance review of the LM2596 see [8].
+
 # References
 * [1] Website TI LM2576: https://www.ti.com/product/LM2576
 * [2] Website TI LM2587: https://www.ti.com/product/LM2587
@@ -73,4 +76,5 @@ The [schematic](https://easyeda.com/matthiasdittmer/diy_power_supply_lm2596) can
 * [5] Youtube Video LM2576 design: https://www.youtube.com/watch?v=EVL7TzCde8I
 * [6] Website article LM2576 design: https://www.smbaker.com/lm2576-constant-voltage-constant-current-switching-power-supply
 * [7] Converter from ebay Germany: https://www.ebay.de/itm/3x-LM2596-DC-Step-Down-Spannungswandler-Arduino-Modul-Regler-LM2596S/252785167788
+* [8] Performance test and review of 20W DC-DC Step Down Voltage Regulator: https://lygte-info.dk/review/Power%20Adjustable%20buck%20converter%20LM2596%20UK.html
 
